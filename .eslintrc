@@ -1,0 +1,16 @@
+{
+  "extends": ["lagetse"],
+  "globals": {
+    "__DEV__": true
+  },
+  "rules": {
+      "no-console": 0,
+      "no-alert": 0,
+      "no-use-before-define": 0,
+      "max-len": 0,
+      "no-irregular-whitespace": 0,
+      "no-confusing-arrow": 0,
+      "no-shadow": 0,
+      "no-unused-expressions": ["error", { "allowShortCircuit": true }]
+  }
+}
