@@ -9,7 +9,6 @@ import * as storage from 'redux-storage';
 import createEngine from 'redux-storage-engine-reactnativeasyncstorage';
 import filter from 'redux-storage-decorator-filter';
 import reducers from './reducers';
-// import _ from 'lodash';
 
 const createStore = () => {
   const appReducer = combineReducers(reducers);
@@ -27,13 +26,7 @@ const createStore = () => {
 
   // filter = engine => whitelist => blacklist => engine
   // To white-/blacklist nested keys add arrays describing the path like ['messaging', 'conversations']
-  const whitelisted = [
-    'auth',
-    'user',
-    'teams',
-    'appstate',
-    ['posts', 'lastFetched'],
-  ];
+  const whitelisted = ['artists'];
   const engine = filter(createEngine('lah17/v1'), whitelisted, []);
   const storageMiddleware = storage.createMiddleware(engine);
   const createStoreWithMiddleware = compose(applyMiddleware(

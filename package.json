@@ -1,16 +1,16 @@
 {
-	"name": "lah17",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "15.4.2",
-		"react-native": "^0.42.0",
+  "name": "lah17",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
     "lodash": "^4.14.1",
     "moment": "^2.15.2",
+    "react": "15.4.2",
+    "react-native": "^0.42.0",
     "react-native-device-info": "0.9.6",
     "react-native-keyboard-spacer": "^0.3.1",
     "react-native-linear-gradient": "^2.0.0",
@@ -21,17 +21,17 @@
     "redux-storage-decorator-filter": "^1.1.6",
     "redux-storage-engine-reactnativeasyncstorage": "^1.0.1",
     "redux-thunk": "^2.1.0"
-	},
-	"devDependencies": {
-		"babel-jest": "19.0.0",
-		"babel-preset-react-native": "1.9.1",
-		"jest": "19.0.2",
-		"react-test-renderer": "15.4.2",
-		"eslint": "^3.4.0",
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-test-renderer": "15.4.2",
+    "eslint": "^3.4.0",
     "eslint-config-lagetse": "^1.1.0",
     "eslint-friendly-formatter": "^2.0.6"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

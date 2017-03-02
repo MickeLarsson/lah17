@@ -3,14 +3,14 @@ import { View } from 'react-native';
 import { Provider } from 'react-redux';
 import createStore from './store';
 import Appstate from './modules/appstate/Appstate';
-import Main from './modules/Main';
+import NavigationContainer from './modules/navigation/NavigationContainer';
 
 const store = createStore();
 
 const App = () =>
   <Provider store={store}>
-    <View style={{ backgroundColor: 'crimson', flex: 1 }}>
-      <Main />
+    <View style={{ flex: 1 }}>
+      <NavigationContainer />
       <Appstate />
     </View>
   </Provider>;
